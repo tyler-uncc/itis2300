@@ -1,0 +1,322 @@
+/* Elements */
+html
+{
+	overflow-y: scroll; /* Sourced from https://stackoverflow.com/questions/1417934/how-to-prevent-scrollbar-from-repositioning-web-page */
+}
+
+body
+{
+	background-color: #DCA; /* Some kind of a tan color in case the image doesnt load */
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat;
+	
+	margin: 0px; /* Fixes the little tiny bit of space left at the top of the document */
+	padding: 0px;
+	
+	font-family: 'Lato', sans-serif; /* Default font for all type because lato beats times new roman */
+}
+
+header
+{
+	background-color: rgba(255, 255, 255, 0.7); /* White background with some(30%) transparency */
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 1px solid black;
+	
+	position: sticky; /* Sticky positioning allows for the header to stop scrolling once it reaches a certain distance */
+	top: -80px;
+		
+	z-index: 100; /* This is to fix some elements going on top of the navigation */
+}
+
+footer
+{
+	padding-bottom: 10px;
+}
+
+form.pretty-form
+{
+	/* Not sure what to do with the form right now */
+}
+
+form .label
+{
+	display: inline-block; /* Lets use fixed width */
+	width: 70px;
+	vertical-align: top; /* This was needed when the labels and inputs fit on the same line. I will have to fix that */
+}
+
+form .input
+{
+	box-sizing: border-box; /* This is a life saver when working with fixed width grids. Counts the border as part of the size */
+	display: inline-block; /* Lets use fixed width */
+	width: 100%;
+	height: 50px;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+
+form #message
+{
+	height: 150px;
+}
+
+form #name
+{
+}
+
+input[type="submit"]
+{
+	padding: 15px;
+}
+
+/* IDs */
+#wrapper
+{	
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	
+	line-height: 1.5em; /* Line height(spacing) for text / characters */
+	
+	background-color: rgba(255, 255, 255, 0.5); /* White background, 50% transparency */
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+#primary-nav
+{
+	text-align: center;
+	
+	margin: 0;
+}
+
+#primary-nav ul
+{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+#primary-nav li
+{
+	display: inline-block;
+	
+	padding-left: 0;
+	margin: 0;
+}
+
+#primary-nav li:first-child a
+{
+	border-left: 1px solid black;
+	
+	border-radius: 15px 0px 0px 15px; /* Rounded borders on the nav bar. Fancy */
+}
+
+#primary-nav li:last-child a
+{	
+	border-radius: 0px 15px 15px 0px; /* Rounded borders on the nav bar. Fancy */
+}
+
+#primary-nav a
+{
+	display: inline-block;
+	
+	background-color: #C0B099; /* A tan or light brown color */
+	
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	text-align: center;
+	text-decoration: none; /* No underline */
+	font-size: 16pt;
+	color: #000;
+		
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#primary-nav a:hover
+{
+	cursor: pointer; /* Visual cue for clickable element */
+	background-color: #D0C0A9;
+}
+
+#primary-nav .current-link
+{
+	background-color: #A09079; /* A darker brown for the active link */
+}
+
+#sidebar-left
+{
+}
+
+#sidebar-right
+{
+}
+
+#sidebar-right img
+{
+	border: 1px solid black;
+	height: 80px;
+}
+
+#main-content
+{
+	box-sizing: border-box;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 5px;
+}
+
+/* Classes */
+.clear-float
+{
+	clear: both;
+}
+
+.restrict-size
+{	
+	min-width: 1000px;
+	max-width: 1280px;
+}
+
+.center
+{
+	margin: 0px auto;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+.text-left
+{
+	text-align: left;
+}
+
+.text-right
+{
+	text-align: right;
+}
+
+.litter-listing
+{
+	position: relative; /* Relative positioning was needed for the overlay to work properly */
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: center;
+	background-color: rgba(140, 100, 0, 0.1);
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.litter-listing .text-left
+{
+	float: left;
+	margin-left: 20px;
+}
+.litter-listing .text-right
+{
+	float: right;
+	margin-right: 20px;
+}
+
+.litter-listing img
+{
+	box-sizing: border-box;
+	max-width: 100%;
+	max-height: 100%;
+	border: 1px solid black;
+	clear: both;
+}
+
+.litter-listing .overlay
+{
+	position: absolute; /* Necessary to position within the parents padding, and to remove the element from the document flow*/
+	width: 100%;
+	height: 100%;
+	margin: -5px; /* Using top and left werent working the way I wanted, but a margin of -5 to counter the parent padding works */
+	background-color: #000; /* Black, opacity set below */
+	opacity: 0.1; /* 10% opacity */
+}
+
+img.fixed-height-40
+{
+	height: 40px; /* This was for the social media buttons. I can probably remove this */
+}
+
+img.rounded-border
+{
+	border-radius: 2500px 2500px 2500px 2500px; /* Super high numbers to almost guarantee that the shape will end up a circle */
+}
+
+img.intext-image
+{
+	float: left;
+	max-height: 300px;
+	border: 1px solid black;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+div.thumbnail
+{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 200px;
+	height: 200px;
+	padding: 2px;
+	border: 1px solid black;
+	margin: 2px;
+	box-shadow: 0px 0px 20px 1px black;
+}
+
+img.thumbnail
+{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+img.image-big
+{
+	position: fixed;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	border: 1px solid black;
+
+	transform: translate(-50%, -50%); /* https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element Hashem Qolami*/
+}
+
+div#image-backdrop
+{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: block;
+}

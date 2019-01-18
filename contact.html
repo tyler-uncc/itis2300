@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!--
+Date Modified: 4/2/2018
+Last Modified By: Tyler
+
+Notes:
+-->
+
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Teddy Bear Creme Goldens</title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="styles/default.css">
+		<link rel="stylesheet" type="text/css" href="styles/mobile.css">
+		<link rel="stylesheet" type="text/css" href="styles/desktop.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="scripts/cookie.js"></script>
+		<script src="scripts/contact.js"></script>
+		
+	</head>
+
+	<body>
+		<header class="restrict-size center">
+			<h1>Teddy Bear Creme Goldens</h1>
+			
+			<nav id="primary-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li><li><a href="aboutus.html">About Us</a></li><li><a href="pets.html">Our Pets</a></li><li><a href="litters.html">Our Litters</a></li><li><li><a href="gallery.html">Gallery</a></li><li><a href="health.html">Health Information</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" class="current-link">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<div id="wrapper" class="restrict-size center">
+				<div id="sidebar-left" class="col-2">
+					<h3>Social Media</h3>
+						<a href="https://facebook.com/tbcgoldens"><img src="images/assets/fb-logo.png" alt="Find us on Facebook"></a>
+						<br><br>
+						<a href="https://twitter.com/tbcgoldens"><img src="images/assets/twitter-logo.png" alt="Find us on Twitter"></a>
+					<h3>Contact Us</h3>
+					<p>Teddy Bear Creme Goldens<br>Ashley Roberts </p>
+					<p>Phone: <a href="tel:+18281234321">828-123-4321</a></p>
+					<p>Email: <a href="mailto:tbcgoldens@gmail.com">tbcgoldens@gmail.com</a></p>
+				</div>
+				
+				<div id="main-content" class="col-8">
+					<h2>Contact Us</h2>
+					
+					<div class="col-7">
+						<h3>Send us an Email</h3>
+						<form class="pretty-form" action="#" method="POST">
+							<label class="label" for="email-name">Name: </label>
+							<input id="email-name" class="input" name="email-name" placeholder="Your Name" required><br>
+							
+							<label class="label" for="email">Email: </label>
+							<input type="email" id="email" class="input" name="email" placeholder="name@email.com" required><br>
+							
+							<label class="label" for="email-subject">Subject: </label>
+							<input id="email-subject" class="input" name="email-subject" placeholder="Subject" required><br>
+							
+							<label class="label" for="message">Message: </label>
+							<textarea id="message" class="input" name="message" placeholder="Your Message..." required></textarea><br>
+							
+							<div class="text-center"><input type="submit" value="Send Message"></div>
+						</form>
+					</div>
+					
+					<div class="col-1"><br></div>
+					
+					<div class="col-4">
+						<h3>Or we can call you</h3>
+						<form class="pretty-form" action="#" method="POST">
+							<label class="label" for="phone-name">Name: </label>
+							<input id="phone-name" class="input" name="phone-name" placeholder="Your Name" required><br>
+							
+							<label class="label" for="phone">Phone: </label>
+							<input type="tel" id="phone" class="input" name="phone" placeholder="555-555-5555" required><br>
+							
+							<label class="label" for="phone-subject">Subject: </label>
+							<input id="phone-subject" class="input" name="phone-subject" placeholder="Subject" required><br>
+							
+							<label for="phone-morningcall">Available in the morning?</label>
+							<input id="phone-morningcall" name="phone-morningcall" type="checkbox">
+							
+							<div class="text-center"><input type="submit" value="Request Call"></div>
+						</form>
+					</div>
+				</div>
+				
+				<div id="sidebar-right" class="col-2 text-center">
+					<br>
+					<a href="http://www.nuvet.com/12034"><img class="fixed-height" src="images/nuvet.png" alt="Image of NuVet"><br>Nuvet</a>
+				</div>
+				
+				<br class="clear-float">
+			</div>
+		</main>
+		
+		<footer class="restrict-size center">
+		&copy; 2018
+		</footer>
+	</body>
+</html>

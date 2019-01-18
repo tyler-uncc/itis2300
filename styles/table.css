@@ -1,0 +1,36 @@
+table, td, th
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-family: Arial, sans-serif;
+}
+
+.center, td
+{
+	text-align: center;
+}
+
+tr
+{
+	line-height: 1.5em;
+}
+
+th
+{
+	font-size: 0.9em;
+}
+
+th, td
+{
+	padding: 3px;
+}
+
+.blue-header
+{
+	background-color: #94b2d6;
+}
+
+.gray-header
+{
+	background-color: #dcd8d7;
+}

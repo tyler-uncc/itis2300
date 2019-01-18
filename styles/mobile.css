@@ -1,0 +1,10 @@
+/* Elements */
+
+/* IDs */
+
+/* Classes */
+[class*="col-"] /*Handwritten, inspired by bootstrap */
+{
+	width: 100%;
+	float: left;
+}
